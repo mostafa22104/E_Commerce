@@ -31,17 +31,20 @@ import { StyleSheet } from "react-native";
     searchRow: { 
       flexDirection: 'row', 
       paddingHorizontal: 16, 
-      marginTop: 8 
+      marginTop: 8,
+      justifyContent:'center',
+      alignItems:'center'
     },
     searchBox: {
       flex: 1,
       flexDirection: 'row',
       backgroundColor: theme.card,
-      padding: 8,
+      paddingLeft: 4,
       borderRadius: 12,
       alignItems: 'center',
       borderWidth: 1,
       borderColor: theme.border,
+      height:40,
     },
     searchInput: { 
       flex: 1, 
