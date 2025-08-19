@@ -2,8 +2,15 @@
  * @format
  */
 
-import { AppRegistry } from 'react-native';
-import App from './App';
-import { name as appName } from './app.json';
+import { AppRegistry } from "react-native";
+import App from "./App";
+import { name as appName } from "./app.json";
+import { ThemeProvider } from "./src/styles/ThemeContext";
 
-AppRegistry.registerComponent(appName, () => App);
+const Root = () => (
+  <ThemeProvider>
+    <App />
+  </ThemeProvider>
+);
+
+AppRegistry.registerComponent(appName, () => Root);

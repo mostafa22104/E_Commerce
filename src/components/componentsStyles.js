@@ -1,0 +1,218 @@
+import { StyleSheet } from "react-native";
+
+const getStyles = theme => StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: theme.background,
+    },
+    imageContainer: {
+      position: 'relative',
+      width: '93%',
+      alignSelf: 'center',
+      marginTop: 10,
+    },
+    image: {
+      width: '100%',
+      height: 420,
+      borderRadius: 20,
+    },
+    backButton: {
+      position: 'absolute',
+      top: 10,
+      left: 10,
+      width: 40,
+      height: 40,
+      borderRadius: 20,
+      alignItems: 'center',
+      justifyContent: 'center',
+    //   backgroundColor: theme.surface,
+      borderWidth: 1,
+      borderColor: theme.border,
+    },
+    backText: {
+      fontSize: 24,
+      color: theme.text,
+      fontWeight: '300',
+    },
+    heartButton: {
+      position: 'absolute',
+      top: 10,
+      right: 10,
+      width: 40,
+      height: 40,
+    //   backgroundColor: theme.surface,
+      borderRadius: 20,
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderWidth: 1,
+      borderColor: theme.border,
+    },
+    heartText: {
+      fontSize: 20,
+      color: theme.text,
+    },
+    infoContainer: {
+      padding: 20,
+      backgroundColor: theme.background,
+    },
+    titleRow: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginBottom: 8,
+    },
+    title: {
+      fontSize: 24,
+      fontWeight: 'bold',
+      color: theme.text,
+      flex: 1,
+    },
+    ratingContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginBottom: 16,
+    },
+    star: {
+      fontSize: 16,
+      color: theme.gold,
+      marginRight: 4,
+    },
+    rating: {
+      fontSize: 14,
+      color: theme.secondary,
+    },
+    description: {
+      fontSize: 14,
+      lineHeight: 20,
+      color: theme.secondary,
+      marginBottom: 4,
+    },
+    readMore: {
+      fontSize: 14,
+      color: theme.accent,
+      fontWeight: '600',
+      marginBottom: 24,
+    },
+    sectionContainer: {
+      marginBottom: 24,
+    },
+    sectionTitle: {
+      fontSize: 16,
+      fontWeight: '600',
+      marginBottom: 12,
+      color: theme.text,
+    },
+    sizeContainer: {
+      flexDirection: 'row',
+      gap: 12,
+    },
+    sizeButton: {
+      width: 40,
+      height: 40,
+      borderRadius: 8,
+      borderWidth: 1,
+      borderColor: theme.border,
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: theme.surface,
+    },
+    sizeButtonSelected: {
+      backgroundColor: theme.primary,
+      borderColor: theme.primary,
+    },
+    sizeText: {
+      fontSize: 14,
+      color: theme.secondary,
+    },
+    sizeTextSelected: {
+      color: theme.background,
+      fontWeight: '600',
+    },
+    colorContainer: {
+      flexDirection: 'row',
+      gap: 12,
+    },
+    colorButton: {
+      width: 32,
+      height: 32,
+      borderRadius: 16,
+      borderWidth: 2,
+      borderColor: 'transparent',
+    },
+    colorButtonSelected: {
+      borderColor: theme.accent,
+      borderWidth: 3,
+    },
+    cartBar: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      padding: 20,
+    //   borderTopWidth: 1,
+    //   borderTopColor: theme.border,
+      backgroundColor: theme.surface,
+      position: 'absolute',
+      bottom: 0,
+      left: 0,
+      right: 0,
+    },
+    quantityContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+    qtyButton: {
+      width: 36,
+      height: 36,
+      borderRadius: 8,
+      borderWidth: 1,
+      borderColor: theme.border,
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: theme.surface,
+    },
+    qtyText: {
+      fontSize: 18,
+      color: theme.secondary,
+    },
+    qtyNumber: {
+      marginHorizontal: 16,
+      fontSize: 16,
+      fontWeight: '600',
+      color: theme.text,
+    },
+    addButton: {
+      flex: 1,
+      backgroundColor: theme.primary,
+      paddingVertical: 14,
+      paddingHorizontal: 16,
+      borderRadius: 50,
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: 60,
+      marginLeft: 16,
+    },
+    addButtonContent: {
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+    cartIcon: {
+      fontSize: 16,
+      marginRight: 8,
+      color: theme.background,
+    },
+    addButtonText: {
+      color: theme.background,
+      fontSize: 14,
+      fontWeight: '600',
+      marginRight: 8,
+    },
+    originalPrice: {
+      color: theme.placeholder,
+      fontSize: 12,
+      textDecorationLine: 'line-through',
+    },
+ 
+  });
+
+  export default getStyles
